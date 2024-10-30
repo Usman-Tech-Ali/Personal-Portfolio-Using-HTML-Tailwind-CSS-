@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-poppins">
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-100">
+      <nav class="fixed w-full top-0 bg-white z-50 shadow">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./images/logo.jpg" alt="logo" />
+            <a
+              href="home.html"
+              class="text-2xl font-bold text-primary text-indigo-900 underline"
+            >
+              Usman Ali
+            </a>
+          </div>
+
+          <ul
+            class="hidden md:flex space-x-10 text-primary font-bold text-sm uppercase"
+          >
+            <li class="hover:text-hover">
+              <a href="profile.html">Profile</a>
+            </li>
+            <li class="hover:text-hover">
+              <a href="hobbies.html">Gallery</a>
+            </li>
+            <li class="hover:text-hover"><a href="goals.html">Goals</a></li>
+            <li class="hover:text-hover">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="hover:text-hover"><a href="skills.html">Skills</a></li>
+            <li class="hover:text-hover"><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="md:hidden flex items-center">
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
+            <label for="menu-toggle" class="space-y-1 cursor-pointer z-20">
+              <div class="w-6 h-0.5 bg-black"></div>
+              <div class="w-6 h-0.5 bg-black"></div>
+              <div class="w-6 h-0.5 bg-black"></div>
+            </label>
+            <ul
+              class="hidden bg-primary absolute left-0 top-16 w-full p-10 rounded-b-3xl space-y-10 text-primary text-center peer-checked:flex flex-col"
+            >
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="hobbies.html">Gallery</a></li>
+              <li><a href="goals.html">Goals</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="container mx-auto px-4 py-16 flex items-center justify-center h-full navbar-margin"
+      >
+        <div class="text-center">
+          <img
+            src="/images/yellow.jpeg"
+            alt="Usman's Picture"
+            class="w-32 h-32 rounded-full mx-auto mb-6"
+          />
+          <h1 class="text-4xl font-bold text-primary md:text-5xl">
+            Hi, I'm Usman Ali
+          </h1>
+          <p class="mt-4 text-black-600 leading-relaxed max-w-lg mx-auto">
+            I am a passionate web developer with expertise in HTML, CSS,
+            JavaScript, and React.
+          </p>
+          <a
+            href="projects.html"
+            class="mt-8 inline-block text-white bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-lg"
+          >
+            Latest Projects
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <style>
+      input[type="checkbox"]:checked ~ ul {
+        display: flex;
+      }
+      .bg-primary {
+        background-color: #e0e7ff;
+      }
+      .text-primary {
+        color: #4338ca;
+      }
+      .text-light {
+        color: #9ca3af;
+      }
+      .hover\:text-hover:hover {
+        color: #6366f1;
+      }
+      @media screen and (min-width: 1024px) {
+        .lg\:flex {
+          display: flex;
+        }
+        .lg\:items-center {
+          align-items: center;
+        }
+        .lg\:justify-between {
+          justify-content: space-between;
+        }
+        .lg\:w-1\/2 {
+          width: 50%;
+        }
+        .lg\:mt-0 {
+          margin-top: 0;
+        }
+        .pt-24 {
+          padding-top: 6rem;
+        }
+        .pt-32 {
+          padding-top: 8rem;
+        }
+      }
+      .container {
+        max-width: 1200px;
+      }
+      body {
+        background: url("/images/background.png");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+      .bg-primary {
+        background-color: #e0e7ff;
+      }
+      .text-primary {
+        color: #4338ca;
+      }
+      .hover\:text-hover:hover {
+        color: #6366f1;
+      }
+      .navbar-margin {
+        margin-top: 3rem;
+      }
+      @media (max-width: 768px) {
+        body {
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+      @media (max-width: 480px) {
+        body {
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Goals</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-poppins bg-primary">
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-100">
+      <nav class="fixed w-full top-0 bg-white z-50 shadow">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./images/logo.jpg" alt="logo" />
+            <a href="home.html" class="text-2xl font-bold text-primary">
+              Usman Ali
+            </a>
+          </div>
+
+          <ul
+            class="hidden md:flex space-x-10 text-primary font-bold text-sm uppercase"
+          >
+            <li class="hover:text-hover">
+              <a href="profile.html">Profile</a>
+            </li>
+            <li class="hover:text-hover">
+              <a href="hobbies.html">Gallery</a>
+            </li>
+            <li class="hover:text-hover text-indigo-900 underline">
+              <a href="goals.html">Goals</a>
+            </li>
+            <li class="hover:text-hover">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="hover:text-hover">
+              <a href="skills.html">Skills</a>
+            </li>
+            <li class="hover:text-hover">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="md:hidden flex items-center">
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
+            <label for="menu-toggle" class="space-y-1 cursor-pointer z-20">
+              <div class="w-6 h-0.5 bg-black"></div>
+              <div class="w-6 h-0.5 bg-black"></div>
+              <div class="w-6 h-0.5 bg-black"></div>
+            </label>
+            <ul
+              class="hidden bg-primary absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-primary text-center peer-checked:flex flex-col"
+            >
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="hobbies.html">Gallery</a></li>
+              <li><a href="goals.html">Goals</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container mx-auto px-4 py-8 lg:py-16 pt-32 lg:pt-44">
+        <div class="flex flex-col lg:flex-row lg:justify-between gap-10">
+          <section class="w-full lg:ml-12 lg:w-1/2">
+            <h2 class="text-4xl font-bold text-primary">Short-Term Goals</h2>
+            <ul class="mt-4 text-lg text-gray-700 list-disc list-inside">
+              <li>Win ODI World Cup for Pakistan</li>
+              <li>Become a Gold Medalist</li>
+              <li>Develop leadership abilities</li>
+              <li>Improve Coding Skills</li>
+              <li>Expand creative design</li>
+            </ul>
+          </section>
+
+          <section class="w-full lg:w-1/2">
+            <h2 class="text-4xl font-bold text-primary">
+              Long-Term Goals(Career)
+            </h2>
+            <ul class="mt-4 text-lg text-gray-700 list-disc list-inside">
+              <li>Master AI and automation</li>
+              <li>Lead a tech development team</li>
+              <li>Become a data science expert</li>
+              <li>Build a personal brand in tech</li>
+              <li>Contribute to open-source projects</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section
+        class="container mx-auto px-4 py-8 text-center bg-indigo-200 rounded-lg shadow-lg"
+      >
+        <h2 class="text-4xl font-bold text-indigo-900">
+          "Success is the result of preparation, hard work, and learning from
+          failure."
+        </h2>
+        <p class="mt-4 text-lg text-gray-600">
+          <i
+            >Stay focused on your goals and always push yourself to achieve
+            more.
+          </i>
+        </p>
+      </section>
+    </div>
+
+    <style>
+      body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+      input[type="checkbox"]:checked ~ ul {
+        display: flex;
+      }
+
+      .bg-primary {
+        background-color: #e0e7ff;
+      }
+
+      .text-primary {
+        color: #4338ca;
+      }
+
+      .text-light {
+        color: #9ca3af;
+      }
+
+      .hover\:text-hover:hover {
+        color: #6366f1;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .lg\:flex {
+          display: flex;
+        }
+        .lg\:items-center {
+          align-items: center;
+        }
+        .lg\:justify-between {
+          justify-content: space-between;
+        }
+        .lg\:w-1\/2 {
+          width: 50%;
+        }
+        .lg\:mt-0 {
+          margin-top: 0;
+        }
+        .pt-24 {
+          padding-top: 6rem;
+        }
+        .pt-32 {
+          padding-top: 8rem;
+        }
+      }
+
+      .container {
+        max-width: 1200px;
+      }
+    </style>
+  </body>
+</html>
+
+<!-- I used a flexbox layout for the goals section to keep things organized and responsive. It neatly arranges the short-term and long-term goals side by side on larger screens and stacks them on top of each other on smaller screens. This way, it's easy to read and navigate whether you're on a phone or a desktop. The background section with the quote provides a nice visual break and adds emphasis to the message, making the whole page more engaging. -->
